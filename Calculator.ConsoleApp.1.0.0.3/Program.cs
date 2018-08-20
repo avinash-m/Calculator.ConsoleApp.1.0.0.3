@@ -16,18 +16,29 @@ namespace Calculator.ConsoleApp._1._0._0._3
         static void Main(string[] args)
         {
             Console.WriteLine("*** Calculator App ***");
-            Console.Write("Enter first number: ");
-            double firstNumber = Convert.ToDouble(Console.ReadLine());            
-            Console.Write("Enter second number: ");
-            double secondNumber = Convert.ToDouble(Console.ReadLine());
 
-            // Avinash Program code------------------------------------
+            double firstNumber = 0.00D;
+            double secondNumber = 0.00D;
+            try
+            {
+                Console.Write("Enter first number: ");
+                firstNumber = Convert.ToDouble(Console.ReadLine());
+                Console.Write("Enter second number: ");
+                secondNumber = Convert.ToDouble(Console.ReadLine());
+                // Avinash Program code------------------------------------
 
-            DoCalculationsUsingSaticClass(firstNumber, secondNumber);
+                DoCalculationsUsingSaticClass(firstNumber, secondNumber);
 
-            // Durga Program code------------------------------------
+                // Durga Program code------------------------------------
 
-            DoCalculationsUsingNonSaticClass(firstNumber, secondNumber);
+                DoCalculationsUsingNonSaticClass(firstNumber, secondNumber);
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Invalid input which cannot be converted into double.");
+            }
+
+            
 
 
 
