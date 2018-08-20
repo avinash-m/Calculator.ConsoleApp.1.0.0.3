@@ -27,16 +27,9 @@ namespace Calculator.ConsoleApp._1._0._0._3
 
             // Durga Program code------------------------------------
 
+            DoCalculationsUsingNonSaticClass(firstNumber, secondNumber);
 
-            Console.WriteLine("\n--------------Durga Math Operations---------------------\n");
 
-            DurgaMathOperations mathoperations = new DurgaMathOperations();
-
-            mathoperations.addition(firstNumber, secondNumber);
-            mathoperations.subtraction(firstNumber, secondNumber);
-            mathoperations.multiplication(firstNumber, secondNumber);
-            mathoperations.division(firstNumber, secondNumber);
-            mathoperations.Reminder(firstNumber, secondNumber);
 
             Console.WriteLine("\nPress any key to continue....................");
             Console.ReadKey();
@@ -52,6 +45,19 @@ namespace Calculator.ConsoleApp._1._0._0._3
             MathOperations.Division(firstNumber, secondNumber);
 
             Console.WriteLine("-----------------------------------------------------------");
+        }
+
+        private static void DoCalculationsUsingNonSaticClass(double firstNumber, double secondNumber)
+        {
+            Console.WriteLine("\n--------------Durga Math Operations---------------------\n");
+
+            DurgaMathOperations mathoperations = new DurgaMathOperations();
+
+            mathoperations.addition(firstNumber, secondNumber);
+            mathoperations.subtraction(firstNumber, secondNumber);
+            mathoperations.multiplication(firstNumber, secondNumber);
+            mathoperations.division(firstNumber, secondNumber);
+            mathoperations.Reminder(firstNumber, secondNumber);
         }
     }
 
