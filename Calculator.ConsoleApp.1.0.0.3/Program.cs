@@ -23,14 +23,7 @@ namespace Calculator.ConsoleApp._1._0._0._3
 
             // Avinash Program code------------------------------------
 
-            Console.WriteLine("\n--------------Avinash Math Operations---------------------");
-
-            MathOperations.Addition(firstNumber, secondNumber);
-            MathOperations.Subtraction(firstNumber, secondNumber);
-            MathOperations.Multiplication(firstNumber, secondNumber);
-            MathOperations.Division(firstNumber, secondNumber);
-            
-            Console.WriteLine("-----------------------------------------------------------");
+            DoCalculationsUsingSaticClass(firstNumber, secondNumber);
 
             // Durga Program code------------------------------------
 
@@ -47,6 +40,18 @@ namespace Calculator.ConsoleApp._1._0._0._3
 
             Console.WriteLine("\nPress any key to continue....................");
             Console.ReadKey();
+        }
+
+        private static void DoCalculationsUsingSaticClass(double firstNumber, double secondNumber)
+        {
+            Console.WriteLine("\n--------------Avinash Math Operations---------------------");
+
+            MathOperations.Addition(firstNumber, secondNumber);
+            MathOperations.Subtraction(firstNumber, secondNumber);
+            MathOperations.Multiplication(firstNumber, secondNumber);
+            MathOperations.Division(firstNumber, secondNumber);
+
+            Console.WriteLine("-----------------------------------------------------------");
         }
     }
 
